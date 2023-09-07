@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-function Homepage() {
+export default function Homepage() {
   return (
     <section id="homepage" className="p-6">
       {
@@ -24,6 +24,8 @@ function Homepage() {
           <Image
             src="/reflection.png"
             alt="Hero Section Reflection Selfie"
+            width={540}
+            height={360}
             className="rounded-lg lg:w-[540px] lg:h-[360px] xl:w-[432px] xl:h-[288px] 2xl:w-[540px] 2xl:h-[360px]"
           />
         </article>
