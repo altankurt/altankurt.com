@@ -4,42 +4,42 @@
 
 @layer base {
   #root {
-    @apply bg-light-bg /*dark:bg-dark-bg*/ w-screen h-screen;
+    @apply bg-light-bg dark:bg-dark-bg w-screen h-screen;
   }
 }
 
 @layer components {
   .h1 {
-    @apply text-6xl font-bold text-light-text /*dark:text-dark-text*/;
+    @apply text-5xl font-bold text-light-text dark:text-dark-text;
   }
   .h2 {
-    @apply text-4xl font-bold text-light-text /*dark:text-dark-text*/;
+    @apply text-4xl font-bold text-light-text dark:text-dark-text;
   }
   .h3 {
-    @apply text-3xl font-semibold text-light-text /*dark:text-dark-text*/;
+    @apply text-3xl font-semibold text-light-text dark:text-dark-text;
   }
   .h4 {
-    @apply text-2xl font-semibold text-light-text /*dark:text-dark-text*/;
+    @apply text-2xl font-semibold text-light-text dark:text-dark-text;
   }
   .h5 {
-    @apply text-xl font-medium text-light-text /*dark:text-dark-text*/;
+    @apply text-xl font-medium text-light-text dark:text-dark-text;
   }
-  .container-inner {
-    @apply mx-auto w-full max-w-3xl xl:max-w-5xl;
+  .paragraph {
+    @apply text-color text-base sm:text-lg text-light-text dark:text-dark-text;
   }
 }
 
 @layer utilities {
   .text-color {
-    @apply text-light-text /*dark:text-dark-text*/;
+    @apply text-light-text dark:text-dark-text;
   }
 
   .bg-color {
-    @apply bg-light-bg /*dark:bg-dark-bg*/;
+    @apply bg-light-bg dark:bg-dark-bg;
   }
 
   .border-color {
-    @apply border-light-border /*dark:border-dark-border*/;
+    @apply border-light-border dark:border-dark-border;
   }
 
   .nav-active {
@@ -47,7 +47,7 @@
   }
 
   .nav-text {
-    @apply text-sm font-semibold sm:text-lg hover:text-primary transition-all;
+    @apply text-base font-semibold sm:text-lg hover:text-primary transition-all;
   }
 
   /* For Webkit-based browsers (Chrome, Safari and Opera) */
@@ -59,5 +59,11 @@
   .scrollbar-hide {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+  }
+
+  html,
+  body,
+  #__next {
+    @apply h-full;
   }
 }
