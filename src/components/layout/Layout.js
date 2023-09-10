@@ -9,16 +9,14 @@ const poppins = Poppins({
 
 export const Layout = ({ children }) => {
   return (
-    <>
-      <div
-        className={`container-inner mx-auto my-12 px-4 ${poppins.className}`}
-      >
+    <div
+      className={`h-full flex flex-col justify-between mx-auto container ${poppins.className}`}
+    >
+      <div className="space-y-5 w-full">
         <Header />
+        <main className={`container px-4`}>{children}</main>
       </div>
-      <main className={`${poppins.className} container-inner px-4`}>
-        {children}
-      </main>
       <Footer />
-    </>
+    </div>
   );
 };
