@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import { ThemeSwitch } from './ThemeSwitch/ThemeSwitch';
 
 import {
   Email,
@@ -9,17 +10,17 @@ import {
   Medium,
   Twitter,
   Coffee,
-} from '../assets/icons/icons';
+} from '../assets/icons';
 
 export default function Header() {
   const router = useRouter();
 
-  // const isActiveLink = (path) => {
-  //   return router.pathname === path ? 'nav-active' : '';
-  // };
+  const isActiveLink = (path) => {
+    return router.pathname === path ? 'nav-active' : '';
+  };
 
   return (
-    <header className="text-color container flex pt-10 items-center justify-between pb-4 border-b border-color px-3">
+    <header className="text-color container flex pt-8 items-center justify-between pb-4 border-b border-color px-3">
       <div className="flex items-center gap-3">
         <Link href={'/'}>
           <Image
@@ -36,7 +37,7 @@ export default function Header() {
           </Link>
           <div className="flex flex-col gap-1">
             <Link href={'/'}>
-              <p>Frontend Developer</p>
+              <p className="text-sm sm:text-base">Frontend Developer</p>
             </Link>
             <div className="flex gap-2">
               <a
@@ -94,13 +95,20 @@ export default function Header() {
       <nav>
         <ul className="relative flex flex-col sm:px-0 gap-1 sm:flex-row sm:gap-8">
           <li>
-            <Link className={`nav-text  ${router.pathname === '/'}`} href={'/'}>
+            <Link
+              className={`nav-text ${
+                router.pathname === '/' ? isActiveLink('/') : ''
+              }`}
+              href={'/'}
+            >
               Homepage
             </Link>
           </li>
           <li>
             <Link
-              className={`nav-text ${router.pathname === '/about'}`}
+              className={`nav-text ${
+                router.pathname === '/about' ? isActiveLink('/about') : ''
+              }`}
               href={'/about'}
             >
               About
@@ -108,8 +116,12 @@ export default function Header() {
           </li>
           <li>
             <Link
-              className={`nav-text  ${router.pathname === '/blog'}`}
-              href="/blog"
+              className={`nav-text ${
+                router.pathname.includes('/blog')
+                  ? isActiveLink('/blog/posts')
+                  : ''
+              }`}
+              href={'/blog/posts'}
             >
               Blog
             </Link>
@@ -125,6 +137,9 @@ export default function Header() {
             >
               CV
             </Link>
+          </li>
+          <li className="max-sm:absolute max-sm:bottom-6 max-sm:-left-10">
+            <ThemeSwitch />
           </li>
         </ul>
       </nav>
