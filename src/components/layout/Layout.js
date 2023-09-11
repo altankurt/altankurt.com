@@ -1,6 +1,7 @@
 import { Poppins } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -17,6 +18,7 @@ export const Layout = ({ children }) => {
         <main className={`container px-4`}>{children}</main>
       </div>
       <Footer />
+      <Analytics />
     </div>
   );
 };
