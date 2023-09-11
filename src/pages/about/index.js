@@ -2,8 +2,8 @@ export default function About() {
   return (
     <section id="about" className="p-6">
       {
-        <article className="my-8 max-w-7xl ">
-          <section className="">
+        <article className="my-8 max-w-7xl">
+          <section>
             <h1 className="h3 md:h2 pb-4">Hey, I&apos;m Altan ✌️</h1>
             <p className="paragraph">
               Lorem Ipsum is simply dummy text of the printing and typesetting
