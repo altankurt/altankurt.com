@@ -1,6 +1,6 @@
 import ReactMarkdown from 'react-markdown';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { railscasts } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import PostHeader from './post-header';
 import Image from 'next/image';
 
@@ -8,56 +8,67 @@ const PostContent = ({ post, className }) => {
   const coverImagePath = post.cover && `/blog/posts/${post.slug}/${post.cover}`;
 
   const customRenderers = {
-    h1(h1) {
-      return <h1 className="h1 ">{h1.children}</h1>;
-    },
     h2(h2) {
-      return <h2 className="h2">{h2.children}</h2>;
+      return (
+        <h2 className="text-4xl font-semibold tracking-tight mt-8 mb-2 leading-normal">
+          {h2.children}
+        </h2>
+      );
     },
+
     h3(h3) {
-      return <h3 className="h3">{h3.children}</h3>;
+      return (
+        <h3 className="text-3xl font-semibold tracking-tight mt-4 mb-2 leading-snug">
+          {h3.children}
+        </h3>
+      );
     },
+
+    h4(h4) {
+      return (
+        <h4 className="text-2xl font-semibold tracking-tight mt-3 mb-1 leading-tight">
+          {h4.children}
+        </h4>
+      );
+    },
+
+    h5(h5) {
+      return (
+        <h5 className="text-xl font-semibold tracking-tight mt-3 mb-1 leading-tight">
+          {h5.children}
+        </h5>
+      );
+    },
+
     blockquote(quote) {
       return (
-        <blockquote className="my-8 border-l-4 border-blog-color pl-3 text-lg italic leading-9">
+        <blockquote className="my-6 border-l-4 border-blog-color pl-3 text-lg italic">
           {quote.children}
         </blockquote>
       );
     },
-    hr(hr) {
-      return (
-        <div className="flex justify-center gap-3">
-          <div className="h-1 w-1 rounded-full bg-dark-bg"></div>
-          <div className="h-1 w-1 rounded-full bg-dark-bg"></div>
-          <div className="h-1 w-1 rounded-full bg-dark-bg"></div>
-          <div className="h-1 w-1 rounded-full bg-dark-bg"></div>
-          <div className="h-1 w-1 rounded-full bg-dark-bg"></div>
-          <div className="h-1 w-1 rounded-full bg-dark-bg"></div>
-          <div className="h-1 w-1 rounded-full bg-dark-bg"></div>
-        </div>
-      );
-    },
+
     li(li) {
       return (
-        <li className="my-2 before:mr-2 before:h-4 before:w-4 before:content-['👉']">
+        <li className="text-lg my-2 before:mr-2 before:h-4 before:w-4 before:content-['•']">
           {li.children}
         </li>
       );
     },
+
     p(paragraph) {
       const { node } = paragraph;
 
       if (node.children[0].tagName === 'img') {
         const image = node.children[0];
-
         return (
           <figure>
             <Image
               src={`/blog/posts/${post.slug}/${image.properties.src}`}
               alt={image.properties.alt}
-              className="h-full w-full object-cover"
-              width={700}
-              height={700}
+              className="h-full w-full rounded-xl object-cover object-center"
+              width={720}
+              height={720}
             />
             <figcaption className="mx-auto mt-1 text-center text-xs">
               {image.properties.title}
@@ -65,8 +76,9 @@ const PostContent = ({ post, className }) => {
           </figure>
         );
       }
-      return <p className="my-8 text-lg leading-9">{paragraph.children}</p>;
+      return <p className="text-lg my-2">{paragraph.children}</p>;
     },
+
     a(link) {
       return (
         <a
@@ -78,16 +90,17 @@ const PostContent = ({ post, className }) => {
         </a>
       );
     },
+
     code(code) {
       if (code.inline) {
         return (
-          <code className="rounded-sm bg-gray-200/50 p-1 font-serif  italic dark:bg-neutral-900/30">
+          <code className="rounded-sm p-1 font-serif italic code-color">
             {code.children[0]}
           </code>
         );
       }
       return (
-        <SyntaxHighlighter language="javascript" style={atomDark}>
+        <SyntaxHighlighter language="javascript" style={railscasts}>
           {code.children[0]}
         </SyntaxHighlighter>
       );
@@ -96,7 +109,7 @@ const PostContent = ({ post, className }) => {
 
   return (
     <>
-      <article className={`w-full ${className}`}>
+      <article className={`mx-auto max-w-6xl ${className}`}>
         <PostHeader
           title={post.title}
           date={post.date}
