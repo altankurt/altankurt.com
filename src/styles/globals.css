@@ -3,8 +3,17 @@
 @tailwind utilities;
 
 @layer base {
-  #root {
-    @apply bg-light-bg dark:bg-dark-bg w-screen h-screen;
+  html,
+  body,
+  #__next {
+    @apply h-full text-light-text dark:text-dark-text;
+  }
+
+  html.dark {
+    @apply bg-dark-bg;
+  }
+  html.light {
+    @apply bg-light-bg;
   }
 }
 
@@ -38,8 +47,16 @@
     @apply bg-light-bg dark:bg-dark-bg;
   }
 
+  .date-color {
+    @apply text-light-date dark:text-dark-date;
+  }
+
   .border-color {
     @apply border-light-border dark:border-dark-border;
+  }
+
+  .code-color {
+    @apply bg-light-code dark:bg-dark-code;
   }
 
   .nav-active {
@@ -59,11 +76,5 @@
   .scrollbar-hide {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-  }
-
-  html,
-  body,
-  #__next {
-    @apply h-full;
   }
 }
