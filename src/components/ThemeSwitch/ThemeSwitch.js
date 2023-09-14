@@ -20,7 +20,7 @@ const ThemeSwitch = () => {
 
   return theme === 'dark' ? (
     <button name="light-theme" type="button" onClick={toggleTheme}>
-      <Sunny className="text-2xl text-yellow-500" />
+      <Sunny className="text-2xl text-primary" />
     </button>
   ) : (
     <button type="button" name="dark-theme" onClick={toggleTheme}>
