@@ -12,7 +12,7 @@ const ShareSocial = ({ slug, title }) => {
   const quote = `Hey! I just read this awesome article by @altankurt
  ${title}`;
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 text-lg">
       <WhatsappShareButton url={shareUrl} title={quote}>
         <Whatsapp />
       </WhatsappShareButton>
@@ -20,7 +20,7 @@ const ShareSocial = ({ slug, title }) => {
         <Telegram />
       </TelegramShareButton>
       <TwitterShareButton url={shareUrl} title={quote}>
-        <Twitter size={16} round />
+        <Twitter size={16} />
       </TwitterShareButton>
       <LinkedinShareButton url={shareUrl}>
         <Linkedin />
