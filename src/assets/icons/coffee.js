@@ -2,8 +2,8 @@ export function Coffee(props) {
   return (
     <svg
       viewBox="0 0 24 24"
-      width="1.2em"
-      height="1.2em"
+      width="1.3em"
+      height="1.3em"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

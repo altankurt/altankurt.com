@@ -8,3 +8,4 @@ export { Twitter } from './twitter.js';
 export { Coffee } from './coffee.js';
 export { Telegram } from './telegram.js';
 export { Whatsapp } from './whatsapp.js';
+export { Vercel } from './vercel.js';
