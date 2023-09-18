@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import readingTime from 'reading-time';
 
-const postsDirectory = path.join(process.cwd(), 'src', 'posts');
+const postsDirectory = path.join(process.cwd(), 'src', 'contents');
 
 const getPostFiles = () => {
   const postFiles = fs.readdirSync(postsDirectory, 'utf-8');
