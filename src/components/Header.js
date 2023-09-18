@@ -117,6 +117,16 @@ export default function Header() {
           <li>
             <Link
               className={`nav-text ${
+                router.pathname === '/projects' ? isActiveLink('/projects') : ''
+              }`}
+              href={'/projects'}
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={`nav-text ${
                 router.pathname.includes('/blog')
                   ? isActiveLink('/blog/posts')
                   : ''
