@@ -35,7 +35,7 @@ const PostListItem = ({ post }) => {
           <p className=" text-color pt-1 text-base">
             {cutAndAddEllipsis(excerpt)}
           </p>
-          <p className="mt-2 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium">
+          <p className="mt-2 inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium">
             Read more
           </p>
         </div>

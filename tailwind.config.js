@@ -9,14 +9,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#EAB308',
+        primary: '#FFA500',
         'light-bg': '#F3F4F6',
         'dark-bg': '#262626',
         'light-text': '#111827',
         'dark-text': '#f4f4f5',
         'light-border': '#6B7280',
         'dark-border': '#404040',
-        'blog-color': '#0369a1',
         'light-code': '#D1D1D1',
         'dark-code': '#6B7280',
         'light-date': '#374151',

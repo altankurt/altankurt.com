@@ -67,6 +67,14 @@
     @apply text-base font-semibold sm:text-lg hover:text-primary transition-all;
   }
 
+  .project-text {
+    @apply text-primary border-primary;
+  }
+
+  .project-style {
+    @apply items-center border-2 rounded-full px-2;
+  }
+
   /* For Webkit-based browsers (Chrome, Safari and Opera) */
   .scrollbar-hide::-webkit-scrollbar {
     display: none;

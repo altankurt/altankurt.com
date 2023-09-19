@@ -42,7 +42,7 @@ const PostContent = ({ post, className }) => {
 
     blockquote(quote) {
       return (
-        <blockquote className="my-6 border-l-4 border-blog-color pl-3 text-lg italic">
+        <blockquote className="my-6 border-l-4 border-primary pl-3 text-lg italic">
           {quote.children}
         </blockquote>
       );
@@ -83,7 +83,7 @@ const PostContent = ({ post, className }) => {
       return (
         <a
           href={link.href}
-          className="text-blog-color hover:underline"
+          className="text-primary hover:underline font-semibold"
           target={'_blank'}
         >
           {link.children}
