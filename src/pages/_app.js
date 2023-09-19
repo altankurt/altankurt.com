@@ -1,4 +1,4 @@
-import Meta from '../components/Meta.js';
+import Meta from '../components/Meta/Meta';
 import { Layout } from '../components/Layout/Layout';
 import '@/styles/globals.css';
 import { ThemeProvider } from 'next-themes';
