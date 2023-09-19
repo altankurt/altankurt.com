@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { Vercel, Github } from '../../assets/icons/index.js';
-import { projects } from '../../data/projects.js';
+import { projects } from '../../data/Projects.js';
 
 export default function Projects() {
   const router = useRouter();

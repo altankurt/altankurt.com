@@ -36,7 +36,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Student Course Hub',
+    title: 'Twitter UI Clone',
     description:
       'The project faithfully replicates the original Twitter interface with pixel-perfect precision.',
     stack: ['JavaScipt', 'TailwindCSS', 'HTML'],
