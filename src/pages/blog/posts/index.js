@@ -1,5 +1,5 @@
-import PostList from '@/components/blog/posts/PostList';
-import { getAllPosts } from '@/lib/posts/post-util';
+import PostList from '../../../components/Blog/Posts/PostList';
+import { getAllPosts } from '../../../lib/Posts/post-util';
 import Head from 'next/head';
 
 const PostListPage = ({ posts }) => {

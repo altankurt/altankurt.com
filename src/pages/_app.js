@@ -1,5 +1,5 @@
-import Meta from '@/components/Meta';
-import { Layout } from '@/components/Layout/Layout';
+import Meta from '../components/Meta';
+import { Layout } from '../components/Layout/Layout';
 import '@/styles/globals.css';
 import { ThemeProvider } from 'next-themes';
 
