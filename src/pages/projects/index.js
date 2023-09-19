@@ -32,6 +32,13 @@ export default function Projects() {
               </div>
               <p className="mt-8 text-color">{project.description}</p>
             </div>
+            <div className="border-t border-color p-4 md:p-5 text-xs font-medium uppercase flex flex-wrap gap-3">
+              {project.stack.map((tech, index) => (
+                <div key={index} className="project-style project-text">
+                  {tech}
+                </div>
+              ))}
+            </div>
           </li>
         ))}
       </ol>
