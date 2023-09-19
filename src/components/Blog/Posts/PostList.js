@@ -1,4 +1,4 @@
-import PostListItem from './post-list-item';
+import PostListItem from './PostListItem';
 
 const PostList = ({ posts }) => {
   return (

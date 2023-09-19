@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { railscasts } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
-import PostHeader from './post-header';
+import PostHeader from './PostHeader';
 import Image from 'next/image';
 
 const PostContent = ({ post, className }) => {

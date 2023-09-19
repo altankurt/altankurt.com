@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { DateReadTime } from './date-read-time';
+import { DateReadTime } from './DateReadTime';
 
 function cutAndAddEllipsis(str) {
   var words = str.split(' ');

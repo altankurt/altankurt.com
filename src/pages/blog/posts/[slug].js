@@ -1,6 +1,6 @@
-import PostContent from '@/components/blog/posts/post-detail/post-content';
+import PostContent from '@/components/blog/Posts/PostDetail/PostContent';
 
-import Meta from '@/components/meta';
+import Meta from '@/components/Meta';
 import { getPostData, getPostFiles } from '@/lib/posts/post-util';
 
 const PostDetailPage = ({ post }) => {

@@ -1,5 +1,5 @@
-import ShareSocial from '../../share';
-import { DateReadTime } from '../date-read-time';
+import ShareSocial from '../../ShareSocial';
+import { DateReadTime } from '../DateReadTime';
 
 const PostHeader = (props) => {
   const { title, date, readTime, slug } = props;
