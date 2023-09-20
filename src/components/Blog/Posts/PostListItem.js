@@ -19,7 +19,7 @@ const PostListItem = ({ post }) => {
   const coverPath = `/blog/posts/${slug}/${cover}`;
   console.log(coverPath);
   return (
-    <li className="group rounded-xl overflow-hidden">
+    <li className="group rounded-xl overflow-hidden border p-4 md:p-5 border-color">
       <Link className="sm:flex" href={linkPath}>
         <div className="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
           <Image

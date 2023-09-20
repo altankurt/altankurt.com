@@ -9,7 +9,10 @@ export default function Projects() {
     <section className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <ol className="grid lg:grid-cols-3 gap-10">
         {projects.map((project) => (
-          <li key={project.id} className="flex flex-col group rounded-xl">
+          <li
+            key={project.id}
+            className="flex flex-col group rounded-xl border border-color"
+          >
             <div className="p-4 md:p-5">
               <div className="flex flex-rol justify-between items-center">
                 <h3 className="text-lg font-bold text-color">
