@@ -30,7 +30,7 @@ const PostListItem = ({ post }) => {
           />
         </div>
         <div className="grow flex flex-col justify-center mt-4 sm:mt-0 sm:ml-6 px-4 sm:px-0">
-          <h2 className="h5 font-bold pb-4">{title}</h2>
+          <h2 className="h5 font-bold py-4">{title}</h2>
           <DateReadTime date={date} timeToRead={readTime} />
           <p className=" text-color pt-1 text-base">
             {cutAndAddEllipsis(excerpt)}
