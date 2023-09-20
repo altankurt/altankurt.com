@@ -11,7 +11,7 @@ export default function Projects() {
         {projects.map((project) => (
           <li
             key={project.id}
-            className="flex flex-col group rounded-xl border border-color"
+            className="flex flex-col group rounded-xl overflow-hidden border border-color"
           >
             <div className="p-4 md:p-5">
               <div className="flex flex-rol justify-between items-center">
