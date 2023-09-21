@@ -53,3 +53,9 @@ You can run the project locally or on a live server.
 
 ## License
 This project is licensed under the MIT license. For more information, see the LICENSE file.
+
+## Author
+- [Website](https://altankurt.dev)
+- [LinkedIn](https://www.linkedin.com/in/altankurt/)
+- [Twitter](https://www.twitter.com/aaltankurt)
+- [Medium](https://medium.com/@altankurt)
