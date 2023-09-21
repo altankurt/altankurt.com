@@ -22,8 +22,6 @@ This project is a web site and blog platform developed using modern web technolo
 ## Technologies Used
 - Next.js
 - TailwindCSS
-- Next.js
-- TailwindCSS
 - Dynamic Routing (Next.js feature for blog posts)
 - Static Routing (Next.js feature for projects)
 - gray-matter (for parsing markdown files)
