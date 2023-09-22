@@ -1,18 +1,19 @@
 import Head from 'next/head';
 
 const Meta = (props) => {
-  const { title, description, type, url, image } = props;
-  const defaultTitle = 'Altan Kurt';
+  const { title, description, url, image } = props;
+  const defaultTitle = 'Altan Kurt - Frontend Developer';
   const defaultDescription =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ';
   const defaultUrl = 'https://altankurt.dev';
   const defaultImage = 'https://altankurt.dev/social-bg.png';
+
   return (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
       <title key="title">{title || defaultTitle}</title>
-      <meta name="site_name" content="Altan Kurt Personal Website" />
+      <meta name="site_name" content={defaultTitle} />
       <meta
         key="description"
         name="description"
@@ -37,16 +38,6 @@ const Meta = (props) => {
         content={image || defaultImage}
       />
 
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@aaltankurt" />
-      <meta name="twitter:creator" content="@aaltankurt" />
-      <meta name="twitter:title" content="Altan Kurt" />
-      <meta name="twitter:image" content={image || defaultImage} />
-      <meta
-        name="twitter:description"
-        content={description || defaultDescription}
-      />
-      <meta name="twitter:image" content={image || defaultImage} />
       {props.children}
     </Head>
   );
