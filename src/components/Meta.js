@@ -4,13 +4,15 @@ const Meta = (props) => {
   const { title, description, url, image } = props;
   const defaultTitle = 'Altan Kurt - Frontend Developer';
   const defaultDescription =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ';
+    'Altan Kurt is a skilled Frontend Developer, crafting impressive and user-friendly web applications using modern web technologies. Explore his portfolio, obtain professional solutions for your digital projects, or reach out now to add Altan to your team!';
   const defaultUrl = 'https://altankurt.dev';
   const defaultImage = 'https://altankurt.dev/social-bg.png';
 
   return (
     <Head>
+      <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta httpEquiv="Content-Language" content="en" />{' '}
       <link rel="icon" href="/favicon.ico" />
       <title key="title">{title || defaultTitle}</title>
       <meta name="site_name" content={defaultTitle} />
@@ -19,7 +21,6 @@ const Meta = (props) => {
         name="description"
         content={description || defaultDescription}
       />
-
       <meta property="og:type" content="website" />
       <meta
         property="og:title"
@@ -37,7 +38,7 @@ const Meta = (props) => {
         name="og:image"
         content={image || defaultImage}
       />
-
+      <link rel="canonical" href={url || defaultUrl} />
       {props.children}
     </Head>
   );
