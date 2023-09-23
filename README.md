@@ -11,7 +11,7 @@ This platform leverages the power of modern JavaScript and React to offer a rich
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#License)
-- [Author](#Author)
+- [Contact With](#contact-with)
 
 ## Features
 
@@ -78,9 +78,10 @@ Contributions, issues, and feature requests are welcome! Feel free to check [iss
 
 This project is licensed under the MIT license. For more information, see the LICENSE file.
 
-## Author
+## Contact With
 
-- [Website](https://altankurt.dev)
+- [hello@altankurt.dev](mailto:hello@altankurt.dev)
+- [altankurt.dev](https://altankurt.dev)
 - [LinkedIn](https://www.linkedin.com/in/altankurt/)
 - [Twitter](https://www.twitter.com/aaltankurt)
 - [Medium](https://medium.com/@altankurt)
