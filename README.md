@@ -1,6 +1,7 @@
 # altankurt.dev
 
-A dynamic website and blog platform built with Next.js, offering rich content and user experience.
+A dynamic website and blog platform built with Next.js, offering rich content and user experience. 
+This platform leverages the power of modern JavaScript and React to offer a rich content and user experience, with optimized performance, SEO-friendly pages, and a modular architecture for scalable development.
 
 ## Table of Contents
 
@@ -8,7 +9,9 @@ A dynamic website and blog platform built with Next.js, offering rich content an
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
+- [Contributing](#contributing)
+- [License](#License)
+- [Author](#Author)
 
 ## Features
 
@@ -39,19 +42,24 @@ A dynamic website and blog platform built with Next.js, offering rich content an
 
 ## Installation
 
-### Clone the project:
+1. Clone the project:
 
 ```bash
-git clone [your-repo-link]
+git clone https://github.com/altankurt/altankurt.dev.git
+```
+2. Navigate to the project directory:
+
+```bash
+cd altankurt.dev
 ```
 
-### Install the dependencies:
+3. Install the dependencies:
 
 ```bash
 npm install
 ```
 
-### Run the project locally:
+4. Run the project locally:
 
 ```bash
 npm run dev
@@ -59,7 +67,12 @@ npm run dev
 
 ## Usage
 
-You can run the project locally or on a live server.
+Open your browser and navigate to `http://localhost:3000`
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/altankurt/altankurt.dev/issues).
+ We can discuss further there.
 
 ## License
 
