@@ -10,7 +10,7 @@ const PostContent = ({ post, className }) => {
   const customRenderers = {
     h2(h2) {
       return (
-        <h2 className="text-4xl font-semibold tracking-tight mt-8 mb-2 leading-normal">
+        <h2 className="text-2xl font-semibold tracking-tight mt-8 mb-2 leading-normal">
           {h2.children}
         </h2>
       );
@@ -18,9 +18,7 @@ const PostContent = ({ post, className }) => {
 
     h3(h3) {
       return (
-        <h3 className="text-3xl font-semibold tracking-tight mt-4 mb-2 leading-snug">
-          {h3.children}
-        </h3>
+        <h3 className="text-xl font-semibold leading-6 mt-8">{h3.children}</h3>
       );
     },
 
@@ -42,7 +40,7 @@ const PostContent = ({ post, className }) => {
 
     blockquote(quote) {
       return (
-        <blockquote className="my-6 border-l-4 border-primary pl-3 text-lg italic">
+        <blockquote className="mt-[42px] border-l-4 border-primary pl-3">
           {quote.children}
         </blockquote>
       );
@@ -50,7 +48,7 @@ const PostContent = ({ post, className }) => {
 
     li(li) {
       return (
-        <li className="text-lg my-2 before:mr-2 before:h-4 before:w-4 before:content-['•']">
+        <li className="text-lg font-normal leading-6 my-2 before:mr-2 before:h-4 before:w-4 before:content-['•']">
           {li.children}
         </li>
       );
@@ -66,7 +64,7 @@ const PostContent = ({ post, className }) => {
             <Image
               src={`/blog/posts/${post.slug}/${image.properties.src}`}
               alt={image.properties.alt}
-              className="h-full w-full rounded-xl object-cover object-center"
+              className="h-full w-full mt-8 rounded-xl object-cover object-center"
               width={720}
               height={720}
             />
@@ -76,14 +74,18 @@ const PostContent = ({ post, className }) => {
           </figure>
         );
       }
-      return <p className="text-lg my-2">{paragraph.children}</p>;
+      return (
+        <p className="text-lg font-normal my-3 leading-6">
+          {paragraph.children}
+        </p>
+      );
     },
 
     a(link) {
       return (
         <a
           href={link.href}
-          className="text-primary hover:underline font-semibold"
+          className="text-primary text-lg underline font-normal tracking-tight leading-8"
           target={'_blank'}
         >
           {link.children}
@@ -94,7 +96,7 @@ const PostContent = ({ post, className }) => {
     code(code) {
       if (code.inline) {
         return (
-          <code className="rounded-sm p-1 font-serif italic code-color">
+          <code className="text-xl font-serif code-color rounded-sm p-1">
             {code.children[0]}
           </code>
         );
@@ -109,14 +111,14 @@ const PostContent = ({ post, className }) => {
 
   return (
     <>
-      <article className={`mx-auto max-w-6xl ${className}`}>
+      <article className={`mx-auto max-w-5xl ${className}`}>
         <PostHeader
           title={post.title}
           date={post.date}
           readTime={post.readTime}
           slug={post.slug}
         />
-        <div className="relative h-[40vh]">
+        <div className="relative h-[35vh]">
           {coverImagePath && (
             <Image
               className="rounded-xl object-cover object-center"
