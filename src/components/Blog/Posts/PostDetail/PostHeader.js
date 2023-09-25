@@ -6,7 +6,7 @@ const PostHeader = (props) => {
 
   return (
     <header className="relative">
-      <h1 className="text-5xl flex items-center justify-center font-semibold tracking-tight mb-12 leading-normal">
+      <h1 className="text-[42px] flex items-center justify-center font-bold tracking-tight my-10 leading-loose">
         {title}
       </h1>
       <section className="mb-2 flex items-center justify-between gap-2">
