@@ -5,7 +5,6 @@ author: 'Altan Kurt'
 excerpt: 'Web geliştirme dünyasında, projelerinizi daha verimli bir şekilde yönetmenizi sağlayan araçlar var. İşte bu araçlardan biri de npm’dir.'
 lang: 'tr'
 cover: 'cover.jpeg'
-image: 'cover.jpeg'
 ---
 
 > Bir geliştirici olarak, deneyimlerimi ve gözlemlerimi paylaşmayı ve böylece hem kendime bir arşiv oluşturmayı hem de merak edenlerin faydalanabileceği içerikler üretmeyi amaçlıyorum. Teknik konuların yanı sıra, çalışma hayatımızı etkileyen sosyal konularda da yazmak niyetindeyim.
@@ -22,7 +21,7 @@ Web geliştirme dünyasında, projelerinizi daha verimli bir şekilde yönetmeni
 
 npm, projelerinizde kullanmak üzere hazır paketleri (modülleri) bulabileceğiniz ve projelerinizi başkalarıyla paylaşabileceğiniz açık kaynaklı bir platformdur. Bu paketler, önceden yazılmış kod parçalarını içerir ve geliştirme sürecinizi hızlandırmak amacıyla kullanılabilir. Örneğin, CSS çerçeveleri, JavaScript kütüphaneleri ve diğer kod parçaları, npm aracılığıyla projenize eklenerek tekrar tekrar yazma ihtiyacını ortadan kaldırır.
 
-> #### “Take your JavaScript development up a notch”
+> **“Take your JavaScript development up a notch”**
 >
 > — npmjs.org
 
@@ -81,11 +80,11 @@ npm’i etkili bir şekilde kullanabilmek için temel komutları bilmek oldukça
 
 ![laptop](laptop.jpg)
 
-#### Bir npm Paketini Projenize Ekleme
+### Bir npm Paketini Projenize Ekleme
 
 Örneğin, bir web projesi geliştiriyorsunuz ve projenize kullanıcı arayüzü bileşenlerini eklemek istiyorsunuz.
 
-##### 1. Node.js ve npm’i İndirme:
+**1. Node.js ve npm’i İndirme:**
 
 İlk adım olarak, Node.js resmi web sitesinden indirmeniz gerekmektedir. İşte bu adımı nasıl gerçekleştireceğiniz:
 
@@ -93,7 +92,7 @@ npm’i etkili bir şekilde kullanabilmek için temel komutları bilmek oldukça
 - Ana sayfada, “**Latest LTS**” (En Son Uzun Süreli Desteklenen Sürüm) sekmesine tıklayın. Bu sürüm, stabil ve uzun süre desteklenen bir sürümdür.
 - İşletim sisteminize uygun olan sürümü seçin ve indirin (örneğin, Windows için “Windows Installer” veya macOS için “macOS Installer”).
 
-##### 2. Node.js ve npm’i Kurma
+**2. Node.js ve npm’i Kurma**
 
 İndirilen kurulum dosyasını çalıştırarak Node.js ve npm’i bilgisayarınıza kurabilirsiniz. İşte bu adımı nasıl gerçekleştireceğiniz:
 
@@ -102,7 +101,7 @@ npm’i etkili bir şekilde kullanabilmek için temel komutları bilmek oldukça
 - Kurulum sırasında, “**npm package manager**” seçeneğinin işaretli olduğundan emin olun. Bu seçenek, npm’in Node.js ile birlikte yüklenmesini sağlar.
 - Kurulum tamamlandığında, “Finish” veya “Tamam” düğmesine tıklayarak kurulumu bitirin.
 
-##### 3. Kurulumun Doğrulaması:
+**3. Kurulumun Doğrulaması:**
 
 Node.js ve npm’i doğru bir şekilde kurduğunuzu doğrulamak için terminali açın ve aşağıdaki komutları kullanın:
 
@@ -113,7 +112,7 @@ npm - v; //npm sürümünü kontrol etmek için
 
 Bu komutlar sırasıyla Node.js ve npm sürüm numaralarını göstermelidir. Artık Node.js ve npm’i başarıyla kurmuş oldunuz.
 
-##### 4. Projeye Paket Ekleme
+**4. Projeye Paket Ekleme**
 
 - Proje dizinine gidin ve `npm init` komutunu kullanarak `package.json` dosyasını oluşturun.
 - `npm install bootstrap` komutunu kullanarak Bootstrap paketini projenize ekleyin.
@@ -131,7 +130,7 @@ Bu yazıda, npm’in **temel kavramlarını** ele aldık. Paketlerin ve modülle
 
 İkinci yazımda, daha fazla ayrıntıya inerek **npm paket yönetimi** ve **gelişmiş kullanımından** bahsetmeye çalışacağım.
 
-**Kaynaklar:**
+## Kaynaklar:
 
 - [npm Documentation](https://docs.npmjs.com/)
 - [An introduction to the NPM package manager](https://nodejs.dev/en/learn/an-introduction-to-the-npm-package-manager/)
