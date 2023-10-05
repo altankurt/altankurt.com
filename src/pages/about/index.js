@@ -6,10 +6,10 @@ export default function About() {
           <section>
             <h1 className="h3 md:h2 pb-8">Hi everyone👋</h1>
             <p className="paragraph">
-              Hello 👋, I'm Altan, a self-taught enthusiastic Frontend Developer
-              living in Izmir, Turkey. When I consider software as a philosophy,
-              I realized that the constant feeling of being “on the road” is
-              invaluable.
+              Hello 👋, I&apos;m Altan, a self-taught enthusiastic Frontend
+              Developer living in Izmir, Turkey. When I consider software as a
+              philosophy, I realized that the constant feeling of being “on the
+              road” is invaluable.
             </p>
             <p className="paragraph pt-6">
               My interest in user experience nourishes my passion for creating
