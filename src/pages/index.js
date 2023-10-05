@@ -15,7 +15,7 @@ export default function Homepage() {
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
-            <p className="paragraph pt-2">
+            <p className="paragraph pt-6">
               It was popularised in the 1960s with the release of Letraset
               sheets containing Lorem Ipsum passages, and more recently with
               desktop publishing software like Aldus PageMaker including
