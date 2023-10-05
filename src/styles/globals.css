@@ -34,7 +34,7 @@
     @apply text-xl font-medium text-light-text dark:text-dark-text;
   }
   .paragraph {
-    @apply text-color text-base sm:text-lg text-light-text dark:text-dark-text;
+    @apply text-color text-base sm:text-xl text-light-text dark:text-dark-text;
   }
 }
 
