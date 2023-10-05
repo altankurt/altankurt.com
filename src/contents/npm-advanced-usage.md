@@ -23,7 +23,7 @@ Paket versiyonlama stratejileri, yazılım projelerinizde kullanılan paketlerin
 
 ### 2. Beta ve Alfa Sürümlerini Kullanma
 
-Beta ve alfa sürümleri, yazılım paketlerinin geliştirme sürecinin farklı aşamalarında kullanılan ön sürümlerdir. Beta sürümleri, genellikle test edilmek üzere yayınlanırken, alfa sürümleri daha erken aşamalarda geliştirici topluluğunun geri bildirimini almak için kullanılır.
+Beta ve alfa sürümleri, yazılım paketlerinin geliştirme sürecinin farklı aşamalarında kullanılan ön sürümlerdir. **Beta** sürümleri, genellikle test edilmek üzere yayınlanırken, **alfa** sürümleri daha erken aşamalarda geliştirici topluluğunun geri bildirimini almak için kullanılır.
 Bir paketin beta sürümünü nasıl kurup kullanacağınızı gösterelim:
 
 ```js
@@ -34,7 +34,7 @@ Bu komut, package-name paketinin en son beta sürümünü yükler.
 
 ### 3. Bağımlılıklar (Dependencies)
 
-Projelerinizi geliştirirken başka paketleri kullanmanız gerekebilir. Bu paketlere "bağımlılıklar" denir. Bağımlılıklar, projenizin diğer paketlerle iletişim kurabilmesi ve işlevselliği sağlayabilmesi için gereklidir. Örneğin, bir web uygulaması geliştiriyorsanız, CSS çerçeveleri veya veritabanı işlevselliği sağlamak için belirli paketlere bağımlı olabilirsiniz. Bu bağımlılıklar package.json dosyasında belirtilir ve npm tarafından otomatik olarak yönetilir.
+Projelerinizi geliştirirken başka paketleri kullanmanız gerekebilir. Bu paketlere "bağımlılıklar" denir. Bağımlılıklar, projenizin diğer paketlerle iletişim kurabilmesi ve işlevselliği sağlayabilmesi için gereklidir. Örneğin, bir web uygulaması geliştiriyorsanız, CSS çerçeveleri veya veritabanı işlevselliği sağlamak için belirli paketlere bağımlı olabilirsiniz. Bu bağımlılıklar `package.json` dosyasında belirtilir ve npm tarafından otomatik olarak yönetilir.
 
 ```js
 {
@@ -45,7 +45,7 @@ Projelerinizi geliştirirken başka paketleri kullanmanız gerekebilir. Bu paket
 }
 ```
 
-Bu örnekte, express ve express-async-handler paketleri bağımlılıklar olarak belirtilmiştir.
+Bu örnekte, `express` ve `express-async-handler` paketleri bağımlılıklar olarak belirtilmiştir.
 
 ### 4. Forklama ve Bağlı Projeler
 
@@ -63,7 +63,7 @@ Verimli bir geliştirme süreci için çalışma ortamınızı optimize etmek ö
 }
 ```
 
-Bu örnekte, npm run update komutuyla projenizin bağımlılıklarını güncelleyebilirsiniz.
+Bu örnekte, `npm run update` komutuyla projenizin bağımlılıklarını güncelleyebilirsiniz.
 
 ![wombats](wombats-mascot.webp)
 
@@ -92,17 +92,17 @@ Projelerinizi geliştirirken sık sık kullanmanız gereken işlemleri, npm scri
 
 `eslint`, `prettier`, `ncc`, ve `jest`'in global olarak değil, projenizin yerelinde `node_modules/.bin/` dizini altına yüklenmesi gerekmektedir.
 
-Bu `node_modules` proje kapsamındaki komutları, `npx …` önekini kullanarak yani (`npx prettier --write **/*.ts`) global olarak yüklenmiş bir program gibi çalıştırmamıza olanak tanır.
+Bu `node_modules` proje kapsamındaki komutları, `npx …` önekini kullanarak yani `npx prettier --write **/*.ts` global olarak yüklenmiş bir program gibi çalıştırmamıza olanak tanır.
 
 ### 2. package-lock.json nedir?
 
 `package-lock.json`, bir Node.js projesinde kullanılan ve projenin bağımlılıklarını ve bu bağımlılıkların belirli versiyonlarını içeren bir dosyadır. Bu dosya, proje bağımlılıklarının belirli versiyonlarının ve bağımlılık ağacının sabitlenmesini sağlayarak, projenin farklı ortamlarda (farklı geliştirici makineleri, sunucular vb.) tutarlı bir şekilde çalışmasına yardımcı olur.
 
-`package-lock.json` dosyası, projede kullanılan her bir paketin adını, versiyonunu ve bağımlı olduğu diğer paketleri içerir. Bu dosya aynı zamanda bağımlılıkların versiyonlarını "sabitleyen" bir yapıya sahiptir, böylece farklı yüklemelerde veya paket güncellemelerinde istenmeyen versiyon değişiklikleri oluşmaz.
+`package-lock.json` dosyası, projede kullanılan her bir paketin adını, versiyonunu ve bağımlı olduğu diğer paketleri içerir. Bu dosya aynı zamanda bağımlılıkların versiyonlarını **"sabitleyen"** bir yapıya sahiptir, böylece farklı yüklemelerde veya paket güncellemelerinde istenmeyen versiyon değişiklikleri oluşmaz.
 
 Bu dosya ayrıca bağımlılıkların indirilip yüklendiği klasörü de belirtir. Bu sayede bir proje klonlandığında veya taşındığında, `package-lock.json` dosyası kullanılarak projenin tam olarak aynı bağımlılıklara sahip olması sağlanır.
 
-Sonuç olarak, `package-lock.json` dosyası projenin tekrarlanabilirliğini ve güvenilirliğini artırmak amacıyla kullanılan önemli bir dosyadır ve genellikle projenin kök dizininde bulunur.
+Sonuç olarak, `package-lock.json` dosyası projenin **tekrarlanabilirliğini** ve **güvenilirliğini** artırmak amacıyla kullanılan önemli bir dosyadır ve genellikle projenin kök dizininde bulunur.
 
 ### 3. Pre- ve Post- Hooks Kullanımı
 
@@ -241,7 +241,7 @@ Scoped paketler oluştururken, `name` alanına kapsamlı adı eklemeniz gerekmek
 
 ### 2. Projeyi npm'de Yayınlama
 
-Scoped paketleri yayınlamak için `npm publish` komutunu kullanabilirsiniz. Ancak, bu paketi genel olarak yayınlamak istiyorsanız - `--access public` seçeneğini eklemeniz gerekmektedir.
+Scoped paketleri yayınlamak için `npm publish` komutunu kullanabilirsiniz. Ancak, bu paketi genel olarak yayınlamak istiyorsanız `--access public` seçeneğini eklemeniz gerekmektedir.
 
 ```js
 npm publish --access public
@@ -250,8 +250,6 @@ npm publish --access public
 ### 3. Projeyi Yayınlandığını Kontrol Etme
 
 Scoped paketi başarıyla yayınladıktan sonra, npm Registry'de paketinizin sayfasını ziyaret ederek yayınlandığını kontrol edebilirsiniz. Örneğin; [https://www.npmjs.com/package/@myorg/my-awesome-package](https://www.npmjs.com/package/@myorg/my-awesome-package)
-
---
 
 ![semantic versioning](semantic-versioning.webp)
 
