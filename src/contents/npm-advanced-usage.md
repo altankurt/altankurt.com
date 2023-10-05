@@ -210,7 +210,7 @@ npm publish
 
 ### 5. Projenin Yayınlandığını Kontrol Etme
 
-Projeyi başarıyla yayınladıktan sonra, npm Registry'de projenizin sayfasını ziyaret ederek yayınlandığını kontrol edebilirsiniz. Örneğin; [https://www.npmjs.com/package/my-awesome-package](https://www.npmjs.com/package/my-awesome-package)
+Projeyi başarıyla yayınladıktan sonra, npm Registry'de projenizin sayfasını ziyaret ederek yayınlandığını [kontrol edebilirsiniz](https://www.npmjs.com/package/my-awesome-package).
 Ardından paketinizi test etmek için `npm install`'ı paket dizininizin yolu ile çalıştırın.
 
 ```js
