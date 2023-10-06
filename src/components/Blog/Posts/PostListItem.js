@@ -20,7 +20,7 @@ const PostListItem = ({ post }) => {
   console.log(coverPath);
   return (
     <li className="group rounded-xl overflow-hidden border p-4 md:p-5 border-color">
-      <Link className="" href={linkPath}>
+      <Link href={linkPath}>
         <div className="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-44">
           <Image
             className="group-hover:scale-110 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 left-0 object-cover rounded-xl"
