@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
+const linkPath = '/about';
 
 export default function Homepage() {
   return (
@@ -6,20 +9,27 @@ export default function Homepage() {
       {
         <article className="my-16 xl:flex justify-between items-center">
           <section className="max-w-3xl">
-            <h1 className="h2 md:h1 pb-4">Hello There!</h1>
+            <h1 className="h2 md:h1 pb-4">Hello, I&apos;m Altan.</h1>
             <p className="paragraph">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s standard dummy
-              text ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              I&apos;m a Frontend Developer. I enjoy learning about new
+              technologies and tools, writing articles, and working on
+              open-source projects.
             </p>
-            <p className="paragraph pt-6">
-              It was popularised in the 1960s with the release of Letraset
-              sheets containing Lorem Ipsum passages, and more recently with
-              desktop publishing software like Aldus PageMaker including
-              versions of Lorem Ipsum.
+            <p className="paragraph pt-4">
+              My motivation for this website is to showcase my professional
+              journey and, over time, to display a reflection of my life and
+              hobbies, such as photography and travel.
+            </p>
+            <p className="paragraph pt-4">
+              If you would like to know more about my career, you can check out
+              the{' '}
+              <Link
+                className="text-primary decoration-2 hover:underline"
+                href={linkPath}
+              >
+                About page
+              </Link>
+              .
             </p>
           </section>
 
