@@ -1,3 +1,4 @@
+import GoogleAnalytics from '../../components/GoogleAnalytics';
 import { Poppins } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -13,6 +14,7 @@ export const Layout = ({ children }) => {
     <div
       className={`h-full flex flex-col justify-between mx-auto container ${poppins.className}`}
     >
+      <GoogleAnalytics />
       <div className="space-y-5 w-full">
         <Header />
         <main className={`container px-4`}>{children}</main>
