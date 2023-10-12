@@ -141,7 +141,9 @@ export default function Header() {
               className={`nav-text ${
                 router.pathname === 'https://read.cv/altankurt'
               }`}
-              href={'https://read.cv/altankurt'}
+              href={
+                'https://drive.google.com/file/d/1wqbSjm1Oq_eU9W6mAwZh4LeQMOHxSvue/view?usp=drive_link'
+              }
               rel="noopener noreferrer"
               target="_blank"
             >
