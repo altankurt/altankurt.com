@@ -13,3 +13,19 @@ export const event = ({ action, category, label, value }) => {
     value: value,
   });
 };
+
+export const trackButtonClick = (label) => {
+  event({
+    action: 'click',
+    category: 'Button',
+    label: label,
+  });
+};
+
+export const trackArticleRead = (label) => {
+  event({
+    action: 'read',
+    category: 'Article',
+    label: label,
+  });
+};
