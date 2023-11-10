@@ -14,6 +14,7 @@
 
 # production
 /build
+/.vscode/
 
 # misc
 .DS_Store
@@ -34,9 +35,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# folder
-.vscode
-.next
-.pdf
+
 
 public/Altan_Kurt_Resume.pdf
