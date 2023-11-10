@@ -33,3 +33,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# folder
+.vscode
+.next
+.pdf
+
+public\Altan_Kurt_Resume.pdf
