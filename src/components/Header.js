@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import { ThemeSwitch } from './ThemeSwitch/ThemeSwitch';
+import { ThemeSwitch } from './ThemeSwitch';
 
 import {
   Email,
@@ -139,11 +139,9 @@ export default function Header() {
           <li>
             <Link
               className={`nav-text ${
-                router.pathname === 'https://read.cv/altankurt'
+                router.pathname === '/Altan_Kurt_Resume.pdf'
               }`}
-              href={
-                'https://drive.google.com/file/d/1wqbSjm1Oq_eU9W6mAwZh4LeQMOHxSvue/view?usp=drive_link'
-              }
+              href={'/Altan_Kurt_Resume.pdf'}
               rel="noopener noreferrer"
               target="_blank"
             >
