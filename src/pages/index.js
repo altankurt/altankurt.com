@@ -11,7 +11,7 @@ export default function Homepage() {
           <section className="max-w-3xl">
             <h1 className="h2 md:h1 pb-4">Hello, I&apos;m Altan.</h1>
             <p className="paragraph">
-              I&apos;m a Frontend Developer. I enjoy learning about new
+              I&apos;m a Software Developer. I enjoy learning about new
               technologies and tools, writing articles, and working on
               open-source projects.
             </p>

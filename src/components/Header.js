@@ -37,7 +37,7 @@ export default function Header() {
           </Link>
           <div className="flex flex-col gap-1">
             <Link href={'/'}>
-              <p className="text-sm sm:text-base">Frontend Developer</p>
+              <p className="text-sm sm:text-base">Software Developer</p>
             </Link>
             <div className="flex gap-2">
               <a

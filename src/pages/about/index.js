@@ -6,7 +6,7 @@ export default function About() {
           <section>
             <h1 className="h3 md:h2 pb-8">Hi everyone👋</h1>
             <p className="paragraph">
-              Hello 👋, I&apos;m Altan, a self-taught enthusiastic Frontend
+              Hello 👋, I&apos;m Altan, a self-taught enthusiastic Software
               Developer living in Izmir, Turkey. When I consider software as a
               philosophy, I realized that the constant feeling of being “on the
               road” is invaluable.
