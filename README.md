@@ -21,7 +21,7 @@ This platform leverages the power of modern JavaScript and React to offer a rich
 - **Responsive Design**: Modern and responsive design with TailwindCSS.
 - **Content Management**: Integrated with `gray-matter` and `reading-time`, `next-share`, for rich content presentation.
 - **Theme Switching**: Switch between night and day modes.
-- **Traffic Analysis**: Integrated with Vercel Analytics for traffic insights.
+- **Traffic Analysis**: Integrated with Google Analytics for traffic insights.
 - **SEO Friendly**: Optimized structure for search engines.
 - **Social Media Sharing**: Customized post detail page and sharing component.
 - **Custom Post Detail Page**: Offers a unique view for each post.
@@ -38,7 +38,7 @@ This platform leverages the power of modern JavaScript and React to offer a rich
 - react-syntax-highlighter (for code syntax highlighting in markdown)
 - next-themes (for theme switching capabilities)
 - next-share (for social media sharing capabilities)
-- Vercel Analytics (for traffic insights)
+- Google Analytics (for traffic insights)
 
 ## Installation
 
