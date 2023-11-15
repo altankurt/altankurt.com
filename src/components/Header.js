@@ -25,7 +25,7 @@ export default function Header() {
         <Link href={'/'}>
           <Image
             alt="Profile Picture"
-            src="/profile.png"
+            src="/portrait.jpg"
             width={80}
             height={80}
             className="hidden rounded-full sm:inline-block"
