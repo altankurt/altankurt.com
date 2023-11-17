@@ -75,7 +75,7 @@ WCAG, web erişilebilirliği için bir standart belirler ve tüm web geliştiric
 
 ### Temel Erişilebilirlik İlkeleri ve Tasarım Unsurları
 
-Erişilebilir web tasarımı, kullanıcı ihtiyaçlarına odaklanır ve WCAG prensiplerine dayalıdır. Bu ilkeleri uygulayan tasarımcılar ve geliştiriciler, web sitesi içeriğinin herkes tarafından anlaşılmasını, kullanılmasını ve etkileşimde bulunulmasını sağlaryabilir.
+Erişilebilir web tasarımı, kullanıcı ihtiyaçlarına odaklanır ve WCAG prensiplerine dayalıdır. Bu ilkeleri uygulayan tasarımcılar ve geliştiriciler, web sitesi içeriğinin herkes tarafından anlaşılmasını, kullanılmasını ve etkileşimde bulunulmasını sağlayabilir.
 
 **⁠• Aria (Accessible Rich Internet Applications) Etiketleri:** ARIA etiketleri, web içeriğinin ekran okuyucular ve diğer yardımcı teknolojiler tarafından daha iyi anlaşılmasına yardımcı olur. Örnek olarak, aria-labelledby ve aria-describedby etiketleri, bir web elemanının işlevini ve kullanımını açıklar. Görme engelli kullanıcılar için görseller, grafikler ve videolar için açıklayıcı metin alternatifleri sağlanmalıdır.
 
