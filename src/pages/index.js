@@ -18,9 +18,7 @@ export default function Homepage() {
             <p className='paragraph pt-4'>
               Currently, I am working at{' '}
               <Link href={'https://www.epigra.com'} target='blank'>
-                <span className='text-primary decoration-2 hover:underline'>
-                  Epigra
-                </span>
+                <span className='underline hover:text-primary'>Epigra</span>
               </Link>{' '}
               as a Frontend Developer. In this role, we are extensively involved
               in creating intuitive, user-friendly interfaces and developing
