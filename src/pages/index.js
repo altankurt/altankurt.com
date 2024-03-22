@@ -16,19 +16,6 @@ export default function Homepage() {
               open-source projects.
             </p>
             <p className='paragraph pt-4'>
-              Currently, I am working at{' '}
-              <Link href={'https://www.epigra.com'} target='blank'>
-                <span className='underline hover:text-primary'>Epigra</span>
-              </Link>{' '}
-              as a Frontend Developer. In this role, we are extensively involved
-              in creating intuitive, user-friendly interfaces and developing
-              responsive web applications using a wide range of technologies
-              including JavaScript, Alpine.js, React, Next.js, Vue, Statamic,
-              and Antlers. This diverse technological toolkit allows us to craft
-              modern, scalable, and highly interactive web applications that
-              meet the evolving needs of our users.
-            </p>
-            <p className='paragraph pt-4'>
               My motivation for this website is to showcase my professional
               journey and, over time, to display a reflection of my life and
               hobbies, such as photography and travel.
