@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -42,6 +43,7 @@ export default function Homepage() {
           />
         </article>
       }
+      <script src="https://cdn.jsdelivr.net/gh/efesener/aicado/aicado-llm.js"></script>
     </section>
   )
 }
