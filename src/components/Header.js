@@ -148,23 +148,6 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <script dangerouslySetInnerHTML={{
-        __html: `
-          window.greetings = ["Hello, I'm your assistant! 👋🏻","Ask me anything."];
-          window.chatPosition = "right-bottom";
-          window.chatBalloonImg = '//a821d63e790a2b70ddeb996bbc284b53.cdn.bubble.io/f1716295121161x737260415472405000/profile-pic.png';
-          window.chatbotIframeSrc = 'https://run.aicado.ai/llm?s=2cefb4e6e7081dffa4f1698834133b4a4137d348070d77f0fb5e346ff253a419323591519c96ad923cbcba9812f2fde9dabd3ff129771c20cf229d400aea7c7c876f57f273d5eb753effc468bb420402bbe57411434c7d3ef64a2a7f738c4e06373530c589c8fb6aa0b384c82ae72e9fabfe1f6c8ba82f00c7fa6e18cbc97338157fded3dd33ccfa4f532a521a616c101b06bd02aa383dcda4b3a7a25c35e9424d926eb30a725108fc344948cd63c1ad82fead1000c6d4ecdf7347fb77c8bcb88b963518ffa3df454458ea1256c2546c538a9d7d23261b00c3b2617951e96fcc53010af14ae957f7710b50a4c989958ef7cabf0ddfa242fbc4dc8222ce7d85ecede954d65d1c88a158b25d7df0b7852d6c825f9e9ac17020f7904c0dd72ea114f582b84b5397b75fad629f22c64b0c332941bb01b894cc84b2a1a0a28e27d1e03b48d047dd48a0a9683b41a6b2e205346d74db2fa3f98985b9f0918ece88af2b8443b6ccae952345085308485b34271d8584e9633c05ed21daf64ffa244757d8e89dae997b9f66fe8e4118454f38a922a154dcffb609e55348aab43716f54322906fd4e26266c1f295e334dbdd96&t=my-customization-wpbqtdki&hide_column=true';
-        `
-      }} />
-      <style jsx global>
-        {`
-          :root {
-            --aicado-greetings-bg: rgba(240, 240, 240, 1);
-            --aicado-greetings-color: rgba(37, 37, 37, 1);
-            --aicado-greetings-font-family: Inter, sans-serif;
-          }
-        `}
-      </style>
     </header>
   );
 }
