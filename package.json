@@ -18,7 +18,7 @@
     "next-share": "^0.25.0",
     "next-themes": "^0.2.1",
     "nextjs-google-analytics": "^2.3.3",
-    "postcss": "8.4.29",
+    "postcss": "8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.7",
