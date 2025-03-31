@@ -28,7 +28,7 @@ export default function Header() {
                   Altan Kurt
                 </h1>
                 <p className='text-body-small text-[#171c24] dark:text-[#dcdcdd]'>
-                  Frontend Developer
+                  Product Manager
                 </p>
               </div>
             </Link>
@@ -183,7 +183,7 @@ export default function Header() {
                       Altan Kurt
                     </h1>
                     <p className='text-body-small text-[#171c24] dark:text-[#dcdcdd]'>
-                      Frontend Developer
+                      Product Manager
                     </p>
                   </div>
                 </Link>
