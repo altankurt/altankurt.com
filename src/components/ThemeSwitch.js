@@ -19,14 +19,14 @@ const ThemeSwitch = () => {
   }
 
   return theme === 'dark' ? (
-    <button name="light-theme" type="button" onClick={toggleTheme}>
-      <Sunny className="text-2xl text-primary" />
+    <button name='light-theme' type='button' onClick={toggleTheme}>
+      <Sunny className='text-2xl text-primary' />
     </button>
   ) : (
-    <button type="button" name="dark-theme" onClick={toggleTheme}>
-      <Moon className="text-2xl text-neutral-800" />
+    <button type='button' name='dark-theme' onClick={toggleTheme}>
+      <Moon className='text-2xl text-neutral-800' />
     </button>
   );
 };
 
-export { ThemeSwitch };
+export default ThemeSwitch;

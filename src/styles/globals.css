@@ -3,60 +3,102 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --primary: 242 101 34; /* #f26522 */
+  }
+
   html,
   body,
   #__next {
-    @apply h-full text-light-text dark:text-dark-text;
+    @apply h-full text-[#171c24] dark:text-[#dcdcdd];
   }
 
   html.dark {
-    @apply bg-dark-bg;
+    @apply bg-[#17191e];
   }
   html.light {
-    @apply bg-light-bg;
+    @apply bg-slate-50;
   }
 }
 
 @layer components {
-  .h1 {
-    @apply text-5xl font-bold text-light-text dark:text-dark-text;
+  /* Text Sizes */
+  .text-display {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold;
   }
-  .h2 {
-    @apply text-4xl font-bold text-light-text dark:text-dark-text;
+
+  .text-h1 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold;
   }
-  .h3 {
-    @apply text-3xl font-semibold text-light-text dark:text-dark-text;
+
+  .text-h2 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold;
   }
-  .h4 {
-    @apply text-2xl font-semibold text-light-text dark:text-dark-text;
+
+  .text-h3 {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold;
   }
-  .h5 {
-    @apply text-xl font-medium text-light-text dark:text-dark-text;
+
+  .text-h4 {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl font-medium;
   }
-  .paragraph {
-    @apply text-color text-base sm:text-xl text-light-text dark:text-dark-text;
+
+  .text-body-large {
+    @apply text-base sm:text-lg md:text-xl leading-relaxed;
+  }
+
+  .text-body {
+    @apply text-sm sm:text-base md:text-lg leading-relaxed;
+  }
+
+  .text-body-small {
+    @apply text-xs sm:text-sm md:text-base leading-relaxed;
+  }
+
+  .text-caption {
+    @apply text-xs sm:text-sm leading-normal;
+  }
+
+  /* Navigation Text */
+  .nav-text {
+    @apply text-sm sm:text-base md:text-lg font-medium;
+  }
+
+  /* Logo Text */
+  .logo-text {
+    @apply text-lg sm:text-xl md:text-2xl font-semibold;
+  }
+
+  /* Card Title */
+  .card-title {
+    @apply text-base sm:text-lg md:text-xl font-semibold;
+  }
+
+  /* Card Description */
+  .card-description {
+    @apply text-sm sm:text-base leading-relaxed;
   }
 }
 
 @layer utilities {
   .text-color {
-    @apply text-light-text dark:text-dark-text;
+    @apply text-[#171c24] dark:text-[#dcdcdd];
   }
 
   .bg-color {
-    @apply bg-light-bg dark:bg-dark-bg;
+    @apply bg-slate-50 dark:bg-[#17191e];
   }
 
   .date-color {
-    @apply text-light-date dark:text-dark-date;
+    @apply text-gray-500 dark:text-gray-400;
   }
 
   .border-color {
-    @apply border-light-border dark:border-dark-border;
+    @apply border-gray-200 dark:border-gray-800;
   }
 
   .code-color {
-    @apply bg-light-code dark:bg-dark-code;
+    @apply bg-gray-100 dark:bg-gray-900;
   }
 
   .nav-active {
@@ -64,7 +106,7 @@
   }
 
   .nav-text {
-    @apply text-base font-semibold sm:text-lg hover:text-primary transition-all;
+    @apply text-base font-medium text-[#171c24] dark:text-[#dcdcdd] hover:text-[#d85a1b] dark:hover:text-[#d85a1b] transition-colors duration-200;
   }
 
   .project-text {
