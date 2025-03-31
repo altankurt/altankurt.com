@@ -1,4 +1,4 @@
-import { formattedDate } from '../../../lib/Date/formatting-util';
+import { formattedDate } from '../../../lib/Date/formatting-util'
 
 const DateReadTime = ({ date, timeToRead }) => (
   <div className="flex flex-col items-start tracking-tight date-color sm:flex-row sm:items-center sm:text-sm">
@@ -8,6 +8,6 @@ const DateReadTime = ({ date, timeToRead }) => (
     </span>
     <span>{timeToRead}</span>
   </div>
-);
+)
 
-export { DateReadTime };
+export { DateReadTime }

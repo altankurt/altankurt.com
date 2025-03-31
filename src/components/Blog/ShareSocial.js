@@ -1,16 +1,16 @@
-import { Email, Linkedin, Telegram, Twitter, Whatsapp } from '@/assets/icons';
+import { Email, Linkedin, Telegram, Twitter, Whatsapp } from '@/assets/icons'
 import {
   TelegramShareButton,
   TwitterShareButton,
   LinkedinShareButton,
   WhatsappShareButton,
   EmailShareButton,
-} from 'next-share';
+} from 'next-share'
 
 const ShareSocial = ({ slug, title }) => {
-  const shareUrl = `https://altankurt.dev/blog/posts/${slug}`;
+  const shareUrl = `https://altankurt.dev/blog/posts/${slug}`
   const quote = `Hey! I just read this awesome article by @altankurt
- ${title}`;
+ ${title}`
   return (
     <div className="flex gap-3 text-lg">
       <WhatsappShareButton url={shareUrl} title={quote}>
@@ -29,7 +29,7 @@ const ShareSocial = ({ slug, title }) => {
         <Email />
       </EmailShareButton>
     </div>
-  );
-};
+  )
+}
 
-export default ShareSocial;
+export default ShareSocial

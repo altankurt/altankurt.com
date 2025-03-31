@@ -1,8 +1,8 @@
-import ShareSocial from '../../ShareSocial';
-import { DateReadTime } from '../DateReadTime';
+import ShareSocial from '../../ShareSocial'
+import { DateReadTime } from '../DateReadTime'
 
-const PostHeader = (props) => {
-  const { title, date, readTime, slug } = props;
+const PostHeader = props => {
+  const { title, date, readTime, slug } = props
 
   return (
     <header className="relative">
@@ -14,7 +14,7 @@ const PostHeader = (props) => {
         <ShareSocial slug={slug} title={title} />
       </section>
     </header>
-  );
-};
+  )
+}
 
-export default PostHeader;
+export default PostHeader
