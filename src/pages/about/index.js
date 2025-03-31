@@ -12,10 +12,10 @@ export default function About() {
 
           <div className='space-y-6 text-lg text-gray-600 dark:text-gray-300 leading-relaxed'>
             <p>
-              Hello 👋, I&apos;m Altan, a self-taught enthusiastic Frontend
-              Developer living in Izmir, Turkey. When I consider software as a
-              philosophy, I realized that the constant feeling of being "on the
-              road" is invaluable.
+              Hello 👋, I&apos;m Altan, a self-taught enthusiastic Product
+              Manager living in Izmir, Turkey. When I consider software as a
+              philosophy, I realized that the constant feeling of being &quot;on
+              the road&quot; is invaluable.
             </p>
             <p>
               My interest in user experience nourishes my passion for creating

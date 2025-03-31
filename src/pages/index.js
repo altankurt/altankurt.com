@@ -86,7 +86,7 @@ export default function Homepage() {
               Hello, I&apos;m Altan.
             </h1>
             <p className='text-xl md:text-2xl text-gray-600 dark:text-gray-300'>
-              I&apos;m a Frontend Developer crafting digital experiences.
+              I&apos;m a Product Manager crafting digital experiences.
             </p>
           </div>
 

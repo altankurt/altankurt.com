@@ -2,9 +2,9 @@ import Head from 'next/head'
 
 const Meta = (props) => {
   const { title, description, url, image } = props
-  const defaultTitle = 'Altan Kurt - Frontend Developer'
+  const defaultTitle = 'Altan Kurt - Product Manager'
   const defaultDescription =
-    'Altan Kurt is a skilled Frontend Developer, crafting impressive and user-friendly web applications using modern web technologies. Explore his portfolio, obtain professional solutions for your digital projects, or reach out now to add Altan to your team!'
+    'Altan Kurt is a skilled Product Manager, crafting impressive and user-friendly web applications using modern web technologies. Explore his portfolio, obtain professional solutions for your digital projects, or reach out now to add Altan to your team!'
   const defaultUrl = 'https://altankurt.dev'
   const defaultImage = 'https://altankurt.dev/social-bg.png'
 
