@@ -5,16 +5,37 @@ import { useState } from 'react';
 export default function Homepage() {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('idle'); // idle, loading, success, error
+  const [error, setError] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('loading');
+    setError('');
 
-    // Simulate API call (replace with actual Octopus Mail API)
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(
+          data.error || 'Bülten aboneliği sırasında bir hata oluştu'
+        );
+      }
+
       setStatus('success');
       setEmail('');
-    }, 2000);
+    } catch (error) {
+      console.error('Subscription error:', error);
+      setError(error.message);
+      setStatus('error');
+    }
   };
 
   const getButtonContent = () => {
@@ -45,13 +66,11 @@ export default function Homepage() {
           </div>
         );
       case 'success':
-        return (
-          <span className='text-sm'>
-            E-posta gönderildi. Gelen kutunuzu kontrol edin!
-          </span>
-        );
+        return 'Abone Ol';
+      case 'error':
+        return 'Tekrar Dene';
       default:
-        return 'Subscribe';
+        return 'Abone Ol';
     }
   };
 
@@ -84,23 +103,34 @@ export default function Homepage() {
           </div>
 
           <div className='pt-4'>
-            <form onSubmit={handleSubmit} className='flex gap-4 max-w-md'>
-              <input
-                type='email'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder='Enter your email'
-                required
-                disabled={status === 'loading' || status === 'success'}
-                className='w-64 px-6 py-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 border border-gray-700 focus:outline-none focus:border-primary transition-colors duration-200 disabled:opacity-50'
-              />
-              <button
-                type='submit'
-                disabled={status === 'loading' || status === 'success'}
-                className='w-40 px-6 py-3 rounded-lg bg-primary text-white font-medium hover:bg-primary/90 active:bg-primary transition-all duration-200 disabled:opacity-90 disabled:cursor-not-allowed'
-              >
-                {getButtonContent()}
-              </button>
+            <form onSubmit={handleSubmit} className='space-y-2 max-w-md'>
+              <div className='flex gap-4'>
+                <input
+                  type='email'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder='E-posta adresiniz'
+                  required
+                  disabled={status === 'loading' || status === 'success'}
+                  className='w-64 px-6 py-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 border border-gray-700 focus:outline-none focus:border-primary transition-colors duration-200 disabled:opacity-50'
+                />
+                <button
+                  type='submit'
+                  disabled={status === 'loading' || status === 'success'}
+                  className='w-32 px-4 py-3 rounded-lg bg-primary text-white font-medium hover:bg-primary/90 active:bg-primary transition-all duration-200 disabled:opacity-90 disabled:cursor-not-allowed'
+                >
+                  {getButtonContent()}
+                </button>
+              </div>
+              {status === 'success' && (
+                <p className='text-sm text-primary pl-2'>
+                  Başarıyla abone oldunuz! Bültenimizi takip ettiğiniz için
+                  teşekkürler.
+                </p>
+              )}
+              {status === 'error' && (
+                <p className='text-sm text-red-500 pl-2'>{error}</p>
+              )}
             </form>
           </div>
         </section>
