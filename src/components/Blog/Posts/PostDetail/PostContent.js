@@ -3,6 +3,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter'
 import { railscasts } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 import PostHeader from './PostHeader'
 import Image from 'next/image'
+import Container from '@/components/Container'
 
 const PostContent = ({ post, className }) => {
   const coverImagePath = post.cover && `/blog/posts/${post.slug}/${post.cover}`
@@ -49,6 +50,29 @@ const PostContent = ({ post, className }) => {
         <li className="text-lg font-normal leading-6 my-2 before:mr-2 before:h-4 before:w-4 before:content-['•']">
           {li.children}
         </li>
+      )
+    },
+
+    img(image) {
+      return (
+        <div className="my-8">
+          <div className="relative w-full max-w-3xl mx-auto">
+            <Image
+              src={`/blog/posts/${post.slug}/${image.src}`}
+              alt={image.alt}
+              className="rounded-lg shadow-lg"
+              width={800}
+              height={400}
+              style={{ width: '100%', height: 'auto' }}
+              priority={false}
+            />
+          </div>
+          {image.title && (
+            <figcaption className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">
+              {image.title}
+            </figcaption>
+          )}
+        </div>
       )
     },
 
@@ -108,22 +132,20 @@ const PostContent = ({ post, className }) => {
   }
 
   return (
-    <>
-      <article className={`mx-auto max-w-5xl ${className}`}>
-        <PostHeader title={post.title} date={post.date} readTime={post.readTime} slug={post.slug} />
-        <div className="relative h-[35vh]">
-          {coverImagePath && (
-            <Image
-              className="rounded-xl object-cover object-center"
-              src={coverImagePath}
-              alt={post.title}
-              fill
-            />
-          )}
+    <Container>
+      <article className={`space-y-12 ${className}`}>
+        <PostHeader
+          title={post.title}
+          cover={coverImagePath}
+          date={post.date}
+          author={post.author}
+          excerpt={post.excerpt}
+        />
+        <div className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-img:rounded-lg prose-img:shadow-lg prose-blockquote:border-primary prose-blockquote:border-l-4 prose-blockquote:pl-3 prose-blockquote:mt-[42px]">
+          <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>
         </div>
-        <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>
       </article>
-    </>
+    </Container>
   )
 }
 

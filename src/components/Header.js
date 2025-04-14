@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import ThemeSwitch from './ThemeSwitch'
 import { useState } from 'react'
-
+import Container from './Container'
 import { Email, Github, Linkedin, Twitter } from '../assets/icons'
 
 export default function Header() {
@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-slate-50 dark:bg-[#17191e] border-b border-gray-200 dark:border-gray-800">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <Container>
         <div className="flex items-center justify-between h-20">
           {/* Logo ve İsim */}
           <div className="flex items-center gap-6">
@@ -285,7 +285,7 @@ export default function Header() {
             </div>
           </div>
         )}
-      </div>
+      </Container>
     </header>
   )
 }

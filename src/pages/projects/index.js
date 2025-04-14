@@ -1,15 +1,16 @@
 import { useRouter } from 'next/router'
 import { ExternalLink, Github } from '../../assets/icons/index.js'
 import { projects } from '../../data/Projects.js'
+import Container from '@/components/Container'
 
 export default function Projects() {
   const router = useRouter()
 
   return (
-    <section className="min-h-screen py-12 px-6">
-      <div className="max-w-7xl mx-auto space-y-12">
+    <Container>
+      <div className="space-y-12">
         <div className="space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary">Projects</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-primary">Projects</h1>
           <div className="w-20 h-1 bg-primary rounded-full"></div>
         </div>
 
@@ -65,6 +66,6 @@ export default function Projects() {
         </ol>
         */}
       </div>
-    </section>
+    </Container>
   )
 }

@@ -1,7 +1,9 @@
+import Container from '@/components/Container'
+
 export default function About() {
   return (
-    <section id="about" className="min-h-screen py-12 px-6">
-      <article className="max-w-4xl mx-auto space-y-6">
+    <Container>
+      <article className="space-y-6">
         <section className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-3xl md:text-4xl font-bold text-primary">Hi everyone!</h1>
@@ -179,15 +181,15 @@ export default function About() {
           <div className="space-y-6 text-lg text-gray-600 dark:text-gray-300 leading-relaxed pt-4">
             <p>
               Good products are built at the intersection of user understanding, technical
-              execution, and business goals. <br /> That’s where I aim to create value.
+              execution, and business goals. <br /> That&apos;s where I aim to create value.
             </p>
             <p>
-              If you’re building something meaningful—or simply want to exchange ideas on product
-              thinking—I’d love to connect.
+              If you&apos;re building something meaningful—or simply want to exchange ideas on
+              product thinking—I&apos;d love to connect.
             </p>
           </div>
         </section>
       </article>
-    </section>
+    </Container>
   )
 }
