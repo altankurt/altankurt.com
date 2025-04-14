@@ -4,9 +4,9 @@ const Meta = props => {
   const { title, description, url, image } = props
   const defaultTitle = 'Altan Kurt - Product Manager'
   const defaultDescription =
-    'Altan Kurt is a skilled Product Manager, crafting impressive and user-friendly web applications using modern web technologies. Explore his portfolio, obtain professional solutions for your digital projects, or reach out now to add Altan to your team!'
-  const defaultUrl = 'https://altankurt.dev'
-  const defaultImage = 'https://altankurt.dev/social-bg.png'
+    'Altan is a product manager focused on solving the right problems, aligning teams around clear goals, and delivering meaningful digital products. Creator of the Zero to Product newsletter.'
+  const defaultUrl = 'https://altankurt.com'
+  const defaultImage = 'https://altankurt.com/social-bg.png'
 
   return (
     <Head>
