@@ -2,10 +2,10 @@ import PostListItem from './PostListItem'
 
 const PostList = ({ posts }) => {
   return (
-    <section className="min-h-screen py-16 px-6">
+    <section className="min-h-screen py-12 px-6">
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary">Blog</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-primary">Blog</h1>
           <div className="w-20 h-1 bg-primary rounded-full"></div>
         </div>
 
