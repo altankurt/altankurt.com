@@ -66,7 +66,12 @@
 
   /* Logo Text */
   .logo-text {
-    @apply text-lg sm:text-xl md:text-2xl font-semibold;
+    @apply text-xl sm:text-xl md:text-2xl font-semibold;
+  }
+
+  /* Header Product Manager Text */
+  .header-pm-text {
+    @apply text-base md:text-lg leading-relaxed font-medium text-primary;
   }
 
   /* Card Title */
