@@ -1,15 +1,15 @@
 export default function About() {
   return (
-    <section id="about" className="min-h-screen py-16 px-6">
+    <section id="about" className="min-h-screen py-12 px-6">
       <article className="max-w-4xl mx-auto space-y-6">
         <section className="space-y-8">
           <div className="space-y-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary">Hi everyone!</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-primary">Hi everyone!</h1>
             <div className="w-20 h-1 bg-primary rounded-full"></div>
           </div>
 
           <div className="space-y-4 text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-            <p>Hi, I&apos;m Altan.</p>
+            <p>I&apos;m Altan.</p>
             <p>
               I have a diverse career journey that extends from the world of finance to product
               management. <br />
