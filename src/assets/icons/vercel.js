@@ -11,5 +11,5 @@ export function Vercel(props) {
     >
       <path d="M256,48,496,464H16Z"></path>
     </svg>
-  );
+  )
 }

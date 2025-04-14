@@ -32,14 +32,7 @@ export const projects = [
     title: 'altankurt.dev',
     description:
       'My personal website, crafted with modern technologies, showcases my writings and professional works',
-    stack: [
-      'Next.js',
-      'TailwindCSS',
-      'Preline UI',
-      'Google Analytics',
-      'Markdown',
-      'Eslint',
-    ],
+    stack: ['Next.js', 'TailwindCSS', 'Preline UI', 'Google Analytics', 'Markdown', 'Eslint'],
     links: [
       {
         link: 'https://github.com/altankurt/altankurt.dev',
@@ -56,15 +49,7 @@ export const projects = [
     title: 'Student Course Hub',
     description:
       'It is a CRM platform developed to enable efficient management of courses and registered students.',
-    stack: [
-      'React.js',
-      'TailwindCSS',
-      'React Router',
-      'React Hooks',
-      'Axios',
-      'Vite.js',
-      'Eslint',
-    ],
+    stack: ['React.js', 'TailwindCSS', 'React Router', 'React Hooks', 'Axios', 'Vite.js', 'Eslint'],
     links: [
       {
         link: 'https://github.com/altankurt/student-course-hub',

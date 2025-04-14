@@ -106,8 +106,8 @@ npm’i etkili bir şekilde kullanabilmek için temel komutları bilmek oldukça
 Node.js ve npm’i doğru bir şekilde kurduğunuzu doğrulamak için terminali açın ve aşağıdaki komutları kullanın:
 
 ```js
-node - v; //Node.js sürümünü kontrol etmek için
-npm - v; //npm sürümünü kontrol etmek için
+node - v //Node.js sürümünü kontrol etmek için
+npm - v //npm sürümünü kontrol etmek için
 ```
 
 Bu komutlar sırasıyla Node.js ve npm sürüm numaralarını göstermelidir. Artık Node.js ve npm’i başarıyla kurmuş oldunuz.
