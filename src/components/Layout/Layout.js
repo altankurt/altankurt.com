@@ -1,5 +1,6 @@
 import GoogleAnalytics from '../../components/GoogleAnalytics'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Poppins } from 'next/font/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
       </div>
       <Footer />
       <Analytics />
+      <SpeedInsights />
     </div>
   )
 }
