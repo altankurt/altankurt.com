@@ -3,14 +3,16 @@ import Link from 'next/link'
 import { DateReadTime } from './DateReadTime'
 
 function cutAndAddEllipsis(str) {
+  if (!str) return ''
+
   var words = str.split(' ')
 
   if (words.length > 30) {
     var trimmedString = words.slice(0, 30).join(' ') + '...'
     return trimmedString
-  } else {
-    return str
   }
+
+  return str
 }
 
 const PostListItem = ({ post }) => {

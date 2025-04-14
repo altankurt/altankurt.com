@@ -58,18 +58,24 @@ const PostContent = ({ post, className }) => {
       if (node.children[0].tagName === 'img') {
         const image = node.children[0]
         return (
-          <figure>
-            <Image
-              src={`/blog/posts/${post.slug}/${image.properties.src}`}
-              alt={image.properties.alt}
-              className="h-full w-full mt-8 rounded-xl object-cover object-center"
-              width={720}
-              height={720}
-            />
-            <figcaption className="mx-auto mt-1 text-center text-xs">
-              {image.properties.title}
-            </figcaption>
-          </figure>
+          <div className="my-8">
+            <div className="relative w-full max-w-3xl mx-auto">
+              <Image
+                src={`/blog/posts/${post.slug}/${image.properties.src}`}
+                alt={image.properties.alt}
+                className="rounded-lg shadow-lg"
+                width={800}
+                height={400}
+                style={{ width: '100%', height: 'auto' }}
+                priority={false}
+              />
+            </div>
+            {image.properties.title && (
+              <figcaption className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">
+                {image.properties.title}
+              </figcaption>
+            )}
+          </div>
         )
       }
       return <p className="text-lg font-normal my-3 leading-6">{paragraph.children}</p>
