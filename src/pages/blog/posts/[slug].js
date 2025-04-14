@@ -9,8 +9,8 @@ const PostDetailPage = ({ post }) => {
       <Meta
         title={post.title}
         description={post.excerpt}
-        url={`https://altankurt.dev/blog/posts/${post.slug}`}
-        image={'https://altankurt.dev/blog/posts/' + post.slug + '/' + post.image}
+        url={`https://altankurt.com/blog/posts/${post.slug}`}
+        image={'https://altankurt.com/blog/posts/' + post.slug + '/' + post.image}
       >
         <meta name="author" content="Altan Kurt" />
       </Meta>
