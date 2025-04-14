@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import ThemeSwitch from './ThemeSwitch'
 import { useState } from 'react'
 
-import { Email, Github, Linkedin, Medium, Twitter, Coffee } from '../assets/icons'
+import { Email, Github, Linkedin, Twitter } from '../assets/icons'
 
 export default function Header() {
   const router = useRouter()
@@ -17,12 +17,10 @@ export default function Header() {
           <div className="flex items-center gap-6">
             <Link href={'/'} className="flex items-center gap-4 group">
               <div>
-                <h1 className="logo-text text-[#171c24] dark:text-[#dcdcdd] group-hover:text-[#d85a1b] transition-colors duration-200">
+                <h1 className="logo-text text-[#171c24] dark:text-[#dcdcdd] transition-colors duration-200">
                   Altan Kurt
                 </h1>
-                <p className="text-body-small text-[#171c24] dark:text-[#dcdcdd]">
-                  Product Manager
-                </p>
+                <p className="header-pm-text">Product Manager</p>
               </div>
             </Link>
           </div>
@@ -93,7 +91,7 @@ export default function Header() {
               Blog
             </Link>
             <Link
-              href={'/Altan_Kurt_Resume.pdf'}
+              href={'/Altan_Kurt_Product_Manager.pdf'}
               rel="noopener noreferrer"
               target="_blank"
               className="nav-text text-[#171c24] dark:text-[#dcdcdd] hover:text-[#d85a1b] dark:hover:text-[#d85a1b] transition-colors duration-200"
@@ -107,21 +105,12 @@ export default function Header() {
             <div className="flex items-center gap-4">
               <a
                 aria-label="Email link"
-                href="mailto:hello@altankurt.dev"
+                href="mailto:hello@altankurt.com"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="nav-text text-[#171c24] dark:text-[#dcdcdd] hover:text-[#d85a1b] dark:hover:text-[#d85a1b] transition-colors duration-200"
               >
                 <Email />
-              </a>
-              <a
-                aria-label="Github profile link"
-                href="https://github.com/altankurt"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="nav-text text-[#171c24] dark:text-[#dcdcdd] hover:text-[#d85a1b] dark:hover:text-[#d85a1b] transition-colors duration-200"
-              >
-                <Github />
               </a>
               <a
                 aria-label="Linkedin profile link"
@@ -133,13 +122,13 @@ export default function Header() {
                 <Linkedin />
               </a>
               <a
-                aria-label="Medium profile link"
-                href="https://altankurt.medium.com/"
+                aria-label="Github profile link"
+                href="https://github.com/altankurt"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="nav-text text-[#171c24] dark:text-[#dcdcdd] hover:text-[#d85a1b] dark:hover:text-[#d85a1b] transition-colors duration-200"
               >
-                <Medium />
+                <Github />
               </a>
               <a
                 aria-label="Twitter profile link"
@@ -149,15 +138,6 @@ export default function Header() {
                 className="nav-text text-[#171c24] dark:text-[#dcdcdd] hover:text-[#d85a1b] dark:hover:text-[#d85a1b] transition-colors duration-200"
               >
                 <Twitter />
-              </a>
-              <a
-                aria-label="Buy me a coffee profile link"
-                href="https://www.buymeacoffee.com/altankurt"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="nav-text text-[#171c24] dark:text-[#dcdcdd] hover:text-[#d85a1b] dark:hover:text-[#d85a1b] transition-colors duration-200"
-              >
-                <Coffee />
               </a>
             </div>
             <ThemeSwitch />
@@ -172,12 +152,10 @@ export default function Header() {
               <div className="flex items-center gap-6">
                 <Link href={'/'} className="flex items-center gap-4 group">
                   <div>
-                    <h1 className="logo-text text-[#171c24] dark:text-[#dcdcdd] group-hover:text-[#d85a1b] transition-colors duration-200">
+                    <h1 className="logo-text text-[#171c24] dark:text-[#dcdcdd] transition-colors duration-200">
                       Altan Kurt
                     </h1>
-                    <p className="text-body-small text-[#171c24] dark:text-[#dcdcdd]">
-                      Product Manager
-                    </p>
+                    <p className="header-pm-text">Product Manager</p>
                   </div>
                 </Link>
               </div>
@@ -251,7 +229,7 @@ export default function Header() {
                     Blog
                   </Link>
                   <Link
-                    href={'/Altan_Kurt_Resume.pdf'}
+                    href={'/Altan_Kurt_Product_Manager.pdf'}
                     rel="noopener noreferrer"
                     target="_blank"
                     className="nav-text text-[#171c24] dark:text-[#dcdcdd] hover:text-[#d85a1b] dark:hover:text-[#d85a1b] transition-colors duration-200"
@@ -267,21 +245,12 @@ export default function Header() {
                 <div className="flex items-center gap-4">
                   <a
                     aria-label="Email link"
-                    href="mailto:hello@altankurt.dev"
+                    href="mailto:hello@altankurt.com"
                     rel="noopener noreferrer"
                     target="_blank"
                     className="nav-text text-[#171c24] dark:text-[#dcdcdd] hover:text-[#d85a1b] dark:hover:text-[#d85a1b] transition-colors duration-200"
                   >
                     <Email />
-                  </a>
-                  <a
-                    aria-label="Github profile link"
-                    href="https://github.com/altankurt"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="nav-text text-[#171c24] dark:text-[#dcdcdd] hover:text-[#d85a1b] dark:hover:text-[#d85a1b] transition-colors duration-200"
-                  >
-                    <Github />
                   </a>
                   <a
                     aria-label="Linkedin profile link"
@@ -293,13 +262,13 @@ export default function Header() {
                     <Linkedin />
                   </a>
                   <a
-                    aria-label="Medium profile link"
-                    href="https://altankurt.medium.com/"
+                    aria-label="Github profile link"
+                    href="https://github.com/altankurt"
                     rel="noopener noreferrer"
                     target="_blank"
                     className="nav-text text-[#171c24] dark:text-[#dcdcdd] hover:text-[#d85a1b] dark:hover:text-[#d85a1b] transition-colors duration-200"
                   >
-                    <Medium />
+                    <Github />
                   </a>
                   <a
                     aria-label="Twitter profile link"
@@ -309,15 +278,6 @@ export default function Header() {
                     className="nav-text text-[#171c24] dark:text-[#dcdcdd] hover:text-[#d85a1b] dark:hover:text-[#d85a1b] transition-colors duration-200"
                   >
                     <Twitter />
-                  </a>
-                  <a
-                    aria-label="Buy me a coffee profile link"
-                    href="https://www.buymeacoffee.com/altankurt"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="nav-text text-[#171c24] dark:text-[#dcdcdd] hover:text-[#d85a1b] dark:hover:text-[#d85a1b] transition-colors duration-200"
-                  >
-                    <Coffee />
                   </a>
                 </div>
                 <ThemeSwitch />
