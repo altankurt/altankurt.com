@@ -83,19 +83,32 @@ export default function Homepage() {
           <div className="space-y-4">
             <h1 className="text-3xl md:text-4xl font-bold text-primary">Hi, I&apos;m Altan!</h1>
             <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              I&apos;m a product manager who focuses on understanding real user needs, aligning
-              business goals, and delivering measurable outcomes.
+              I&apos;m a product manager committed to identifying the right problems, understanding
+              users deeply, and helping teams deliver solutions that create measurable impact.
             </p>
           </div>
 
           <div className="space-y-4">
             <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              I enjoy learning about new technologies and tools, writing articles, and working on
-              open-source projects.
+              I focus on defining what truly matters and turning strategy into action. <br />
+              Every decision, feature, and iteration should serve a purpose—for the user, the team,
+              and the business.
             </p>
             <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              My motivation for this website is to showcase my professional journey and, over time,
-              to display a reflection of my life and hobbies, such as photography and travel.
+              I also write a newsletter called{' '}
+              <a
+                href="https://www.linkedin.com/newsletters/7290832723387047936/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 transition-colors duration-200"
+              >
+                Zero to Product
+              </a>{' '}
+              where I share practical insights from the field—covering topics from product discovery
+              to strategic decision-making.
+            </p>
+            <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+              If you&apos;d like to follow along, don&apos;t forget to subscribe below.
             </p>
           </div>
 
