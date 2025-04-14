@@ -6,13 +6,18 @@ export default function Projects() {
   const router = useRouter()
 
   return (
-    <section className="min-h-screen py-16 px-6">
+    <section className="min-h-screen py-12 px-6">
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-primary">Projects</h1>
           <div className="w-20 h-1 bg-primary rounded-full"></div>
         </div>
 
+        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+          Projects section is currently being updated. Please check back soon!
+        </p>
+
+        {/* Projects will be updated soon
         <ol className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map(project => (
             <li
@@ -58,6 +63,7 @@ export default function Projects() {
             </li>
           ))}
         </ol>
+        */}
       </div>
     </section>
   )
