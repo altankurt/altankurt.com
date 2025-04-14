@@ -24,14 +24,18 @@ export default function Homepage() {
       const data = await response.json()
 
       if (!response.ok) {
-        throw new Error(data.error || 'Bülten aboneliği sırasında bir hata oluştu')
+        throw new Error(data.error || 'An error occurred during newsletter subscription')
       }
 
       setStatus('success')
       setEmail('')
     } catch (error) {
       console.error('Subscription error:', error)
-      setError(error.message)
+      if (error.message === 'Failed to add contact') {
+        setError('This email address is already registered')
+      } else {
+        setError(error.message)
+      }
       setStatus('error')
     }
   }
@@ -64,11 +68,11 @@ export default function Homepage() {
           </div>
         )
       case 'success':
-        return 'Abone Ol'
+        return 'Subscribe'
       case 'error':
-        return 'Tekrar Dene'
+        return 'Try Again'
       default:
-        return 'Abone Ol'
+        return 'Subscribe'
     }
   }
 
@@ -102,7 +106,7 @@ export default function Homepage() {
                   type="email"
                   value={email}
                   onChange={e => setEmail(e.target.value)}
-                  placeholder="E-posta adresiniz"
+                  placeholder="Your email address"
                   required
                   disabled={status === 'loading' || status === 'success'}
                   className="w-full sm:w-64 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-300 placeholder-gray-500 border border-gray-200 dark:border-gray-700 focus:outline-none focus:border-primary transition-colors duration-200 disabled:opacity-50"
@@ -117,7 +121,7 @@ export default function Homepage() {
               </div>
               {status === 'success' && (
                 <p className="text-sm text-primary pl-2">
-                  Başarıyla abone oldunuz! Bültenimizi takip ettiğiniz için teşekkürler.
+                  Successfully subscribed! Thank you for following our newsletter.
                 </p>
               )}
               {status === 'error' && <p className="text-sm text-red-500 pl-2">{error}</p>}
