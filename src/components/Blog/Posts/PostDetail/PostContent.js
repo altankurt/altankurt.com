@@ -3,6 +3,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter'
 import { railscasts } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 import PostHeader from './PostHeader'
 import Image from 'next/image'
+import Container from '@/components/Container'
 
 const PostContent = ({ post, className }) => {
   const coverImagePath = post.cover && `/blog/posts/${post.slug}/${post.cover}`
@@ -108,22 +109,20 @@ const PostContent = ({ post, className }) => {
   }
 
   return (
-    <>
-      <article className={`mx-auto max-w-5xl ${className}`}>
-        <PostHeader title={post.title} date={post.date} readTime={post.readTime} slug={post.slug} />
-        <div className="relative h-[35vh]">
-          {coverImagePath && (
-            <Image
-              className="rounded-xl object-cover object-center"
-              src={coverImagePath}
-              alt={post.title}
-              fill
-            />
-          )}
+    <Container>
+      <article className={`space-y-12 ${className}`}>
+        <PostHeader
+          title={post.title}
+          cover={coverImagePath}
+          date={post.date}
+          author={post.author}
+          excerpt={post.excerpt}
+        />
+        <div className="prose prose-lg dark:prose-invert max-w-none">
+          <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>
         </div>
-        <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>
       </article>
-    </>
+    </Container>
   )
 }
 

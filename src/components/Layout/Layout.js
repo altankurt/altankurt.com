@@ -12,12 +12,10 @@ const poppins = Poppins({
 
 const Layout = ({ children }) => {
   return (
-    <div className={`h-full flex flex-col justify-between mx-auto container ${poppins.className}`}>
+    <div className={`min-h-screen flex flex-col ${poppins.className}`}>
       <GoogleAnalytics />
-      <div className="space-y-5 w-full">
-        <Header />
-        <main className={`container px-4`}>{children}</main>
-      </div>
+      <Header />
+      <main className="flex-1 py-12">{children}</main>
       <Footer />
       <Analytics />
       <SpeedInsights />
