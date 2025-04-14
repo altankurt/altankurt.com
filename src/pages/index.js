@@ -73,22 +73,23 @@ export default function Homepage() {
   }
 
   return (
-    <section id="homepage" className="min-h-screen flex items-center justify-center px-6 py-16">
-      <article className="max-w-7xl mx-auto xl:flex justify-between items-center gap-12">
-        <section className="max-w-2xl space-y-6">
+    <section id="homepage" className="py-12 px-6">
+      <article className="max-w-4xl mx-auto space-y-6">
+        <section className="max-w-5xl space-y-6">
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-6xl font-bold text-primary">Hello, I&apos;m Altan.</h1>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300">
-              I&apos;m a Product Manager crafting digital experiences.
+            <h1 className="text-3xl md:text-4xl font-bold text-primary">Hi, I&apos;m Altan!</h1>
+            <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+              I&apos;m a product manager who focuses on understanding real user needs, aligning
+              business goals, and delivering measurable outcomes.
             </p>
           </div>
 
           <div className="space-y-4">
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
               I enjoy learning about new technologies and tools, writing articles, and working on
               open-source projects.
             </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
               My motivation for this website is to showcase my professional journey and, over time,
               to display a reflection of my life and hobbies, such as photography and travel.
             </p>
@@ -96,7 +97,7 @@ export default function Homepage() {
 
           <div className="pt-4">
             <form onSubmit={handleSubmit} className="space-y-2 max-w-md">
-              <div className="flex gap-4">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <input
                   type="email"
                   value={email}
@@ -104,12 +105,12 @@ export default function Homepage() {
                   placeholder="E-posta adresiniz"
                   required
                   disabled={status === 'loading' || status === 'success'}
-                  className="w-64 px-6 py-3 rounded-lg bg-gray-800 text-gray-300 placeholder-gray-500 border border-gray-700 focus:outline-none focus:border-primary transition-colors duration-200 disabled:opacity-50"
+                  className="w-full sm:w-64 px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-300 placeholder-gray-500 border border-gray-200 dark:border-gray-700 focus:outline-none focus:border-primary transition-colors duration-200 disabled:opacity-50"
                 />
                 <button
                   type="submit"
                   disabled={status === 'loading' || status === 'success'}
-                  className="w-32 px-4 py-3 rounded-lg bg-primary text-white font-medium hover:bg-primary/90 active:bg-primary transition-all duration-200 disabled:opacity-90 disabled:cursor-not-allowed"
+                  className="w-full sm:w-32 px-4 py-3 rounded-lg bg-primary text-white font-medium hover:bg-primary/90 active:bg-primary transition-all duration-200 disabled:opacity-90 disabled:cursor-not-allowed"
                 >
                   {getButtonContent()}
                 </button>
@@ -123,17 +124,6 @@ export default function Homepage() {
             </form>
           </div>
         </section>
-
-        <div className="relative mt-12 xl:mt-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl blur-3xl"></div>
-          <Image
-            src="/reflection.png"
-            alt="Hero Section Reflection Selfie"
-            width={540}
-            height={360}
-            className="relative rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
-          />
-        </div>
       </article>
     </section>
   )
