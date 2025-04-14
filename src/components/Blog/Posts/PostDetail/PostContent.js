@@ -53,6 +53,29 @@ const PostContent = ({ post, className }) => {
       )
     },
 
+    img(image) {
+      return (
+        <div className="my-8">
+          <div className="relative w-full max-w-3xl mx-auto">
+            <Image
+              src={`/blog/posts/${post.slug}/${image.src}`}
+              alt={image.alt}
+              className="rounded-lg shadow-lg"
+              width={800}
+              height={400}
+              style={{ width: '100%', height: 'auto' }}
+              priority={false}
+            />
+          </div>
+          {image.title && (
+            <figcaption className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">
+              {image.title}
+            </figcaption>
+          )}
+        </div>
+      )
+    },
+
     p(paragraph) {
       const { node } = paragraph
 
@@ -118,7 +141,7 @@ const PostContent = ({ post, className }) => {
           author={post.author}
           excerpt={post.excerpt}
         />
-        <div className="prose prose-lg dark:prose-invert max-w-none">
+        <div className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-img:rounded-lg prose-img:shadow-lg prose-blockquote:border-primary prose-blockquote:border-l-4 prose-blockquote:pl-3 prose-blockquote:mt-[42px]">
           <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>
         </div>
       </article>
