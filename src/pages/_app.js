@@ -15,10 +15,15 @@ export default function App({ Component, pageProps }) {
       cal('floatingButton', {
         calLink: 'altankurt/tanisma-toplantisi',
         config: { layout: 'month_view' },
+        buttonColor: '#FF4D00',
+        buttonTextColor: '#ffffff',
         buttonText: 'Toplandı Planla',
       })
       cal('ui', {
-        cssVarsPerTheme: { light: { 'cal-brand': '#292929' }, dark: { 'cal-brand': '#fafafa' } },
+        cssVarsPerTheme: {
+          light: { 'cal-brand': '#FF4D00' },
+          dark: { 'cal-brand': '#ffffff' },
+        },
         hideEventTypeDetails: false,
         layout: 'month_view',
       })
